@@ -1,0 +1,164 @@
+/* Main Tags */
+
+:root {
+  /* Colors */
+  --primary: rgb(99, 66, 58);
+  --primary-light: rgb(161, 106, 92);
+  --primary-lighter: rgb(211, 159, 146);
+  --primary-lightest: rgb(247, 221, 214);
+  --primary-dark: rgb(43, 26, 21);
+  /* Shadows */
+  --shadow-default: 0px 0px 3px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  background-color: whitesmoke;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  width: 80rem;
+  margin: 0 auto;
+}
+
+/* Inquire Header */
+
+#inq-head {
+  background-color: var(--primary);
+  padding: 0.5rem;
+  transition: 0.2s;
+}
+
+#inq-head:hover {
+  background-color: var(--primary-light);
+}
+
+#inq-head a {
+  color: whitesmoke;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+/* Top Navbar */
+
+#top-navbar {
+  background-color: whitesmoke;
+  font-family: "Lora", sans-serif;
+  height: 9rem;
+  border-bottom: 1px solid rgb(205, 206, 207);
+  border-top: 1px solid rgb(205, 206, 207);
+  transition: 0.2s;
+}
+
+#top-navbar .vr {
+  height: 4rem;
+}
+
+#top-navbar .nav-link {
+  color: var(--primary-dark);
+  width: 12rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-shadow: var(--shadow-default);
+  transition: 0.2s;
+}
+
+#top-navbar .nav-link:hover {
+  color: var(--primary-light);
+  transform: scale(1.05);
+}
+
+#top-navbar .navbar-brand {
+  padding: 20px;
+  transition: 0.2s;
+  filter: drop-shadow(var(--shadow-default));
+}
+
+#top-navbar .navbar-brand:hover {
+  transform: scale(1.05);
+}
+
+#top-navbar img {
+  height: 7rem;
+  transition: 0.2s;
+}
+
+/* Motto Footer */
+
+#motto-logo {
+  width: 8rem;
+  margin: auto 1rem;
+  filter: drop-shadow(var(--shadow-default));
+}
+
+#motto-text {
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+  width: 25rem;
+  font-size: 0.75rem;
+  margin-bottom: 1.5rem;
+  color: gray;
+}
+
+/* Contact Footer */
+
+#contact-footer {
+  height: 12rem;
+  background-color: var(--primary-lightest);
+  border-bottom: 1px solid rgb(205, 206, 207);
+  border-top: 1px solid rgb(205, 206, 207);
+}
+
+#contact-footer-details {
+  width: 40rem;
+}
+
+.h5 {
+  font-family: "Lora", sans-serif;
+  color: var(--primary-dark);
+  text-shadow: var(--shadow-default);
+}
+
+.footer-menu {
+  font-size: 0.8rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer-menu a {
+  color: var(--primary-dark);
+}
+
+.footer-menu a:hover {
+  color: var(--primary-lighter);
+}
+
+.socmed-icon {
+  height: 1.5rem;
+  filter: contrast(0);
+}
+
+.socmed-icon:hover {
+  filter: contrast(1);
+}
+
+/* Copyright Footer */
+
+#copyright-footer {
+  text-transform: uppercase;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.75rem;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--primary-dark);
+  color: whitesmoke;
+}
+
+@include media-breakpoint-up(md) {
+  #top-navbar .nav-link {
+    font-size: 1rem;
+  }
+}

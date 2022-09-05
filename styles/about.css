@@ -1,0 +1,135 @@
+hr {
+  width: 80rem;
+  margin: 0 auto;
+}
+
+/* About Intro Section */
+
+#about-intro {
+  margin: 2rem auto;
+}
+
+#intro-img {
+  width: 90rem;
+}
+
+#intro-img img {
+  width: 90rem;
+  height: 12rem;
+  object-fit: cover;
+}
+
+#about-intro h2 {
+  color: whitesmoke;
+  margin: -13rem;
+  font-family: "Lora", sans-serif;
+  text-align: center;
+  filter: opacity(0.8);
+  font-size: 12rem;
+  text-shadow: var(--shadow-default);
+}
+
+/* Company Description */
+
+#company-desc {
+  margin: 2rem auto;
+  width: 70rem;
+}
+
+#company-desc img {
+  height: 6rem;
+  filter: drop-shadow(var(--shadow-default));
+}
+
+#company-desc .vr {
+  margin: 0 2rem;
+}
+
+#company-desc .p {
+  font-family: "Montserrat", sans-serif;
+  width: 35rem;
+  text-align: justify;
+  text-shadow: var(--shadow-default);
+}
+
+/* Team Members */
+
+#team-cards {
+  padding: 2rem 0;
+  width: 80rem;
+}
+
+#team-cards h1 {
+  font-family: "Lora", sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: var(--primary-dark);
+  text-shadow: var(--shadow-default);
+}
+
+.card {
+  margin: 1rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  text-shadow: var(--shadow-default);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Testimonial */
+
+#testimonial-footer {
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  margin: 2rem auto;
+  height: 8rem;
+  background-color: var(--primary-lighter);
+}
+
+#testimonial-footer figure {
+  padding-top: 2rem;
+}
+
+blockquote,
+figcaption {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* About the planner */
+
+#about-the-planner {
+  padding: 2rem;
+}
+
+#pic-planner {
+  width: 50rem;
+  margin-right: 10rem;
+  filter: drop-shadow(0px 0px 25px rgba(0, 0, 0, 0.2));
+}
+
+#text-planner {
+  width: 40rem;
+  margin-top: -8rem;
+  margin-left: 20rem;
+  filter: drop-shadow(0px 0px 25px rgba(0, 0, 0, 0.2));
+}
+
+/* About the team */
+
+#about-the-team {
+  margin-bottom: 2rem;
+}
+
+#about-the-team img {
+  width: 60rem;
+  height: 24rem;
+  object-fit: cover;
+  margin: 2rem;
+  filter: drop-shadow(0px 0px 25px rgba(0, 0, 0, 0.2));
+}
+
+#about-the-team p {
+  font-family: "Montserrat", sans-serif;
+  width: 40rem;
+  text-align: justify;
+  color: var(--primary-dark);
+  text-shadow: var(--shadow-default);
+}

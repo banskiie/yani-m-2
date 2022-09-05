@@ -1,0 +1,82 @@
+/* Home Image Carousel */
+
+#home-carousel {
+  margin: 2rem auto 4rem auto;
+  width: 90rem;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+}
+
+#home-carousel img {
+  height: 32rem;
+  object-fit: cover;
+}
+
+/* Home Intro Section */
+
+#home-intro-section {
+  font-family: "Montserrat", sans-serif;
+  width: 50rem;
+}
+
+.intro-paragraph {
+  color: var(--primary-dark);
+  text-align: justify;
+  font-size: 1rem;
+  padding: 1rem;
+  text-shadow: var(--shadow-default);
+}
+
+#meet-team-btn {
+  color: whitesmoke;
+  background-color: var(--primary);
+  padding: 0.5rem 1.5rem;
+  margin: 1rem;
+  border-radius: 0.2W5rem;
+  box-shadow: var(--shadow-default);
+  transition: 0.2s;
+}
+
+#meet-team-btn:hover {
+  background-color: var(--primary-light);
+}
+
+/* Services Section */
+
+#services-section {
+  width: 60rem;
+}
+
+#services-section img {
+  object-fit: cover;
+  border-radius: 2rem;
+  filter: grayscale(100%) drop-shadow(var(--shadow-default));
+  transition: 0.2s;
+}
+
+#services-section img:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+  filter: grayscale(0) drop-shadow(var(--shadow-default));
+}
+
+#services-section h1 {
+  font-family: "Lora", sans-serif;
+  padding-top: 2rem;
+  text-transform: uppercase;
+  text-shadow: var(--shadow-default);
+}
+
+#services-select {
+  padding: 2rem;
+}
+
+#intima-boda-img {
+  width: 400px;
+  height: 720px;
+}
+
+#right-img-1,
+#right-img-2 {
+  width: 400px;
+  height: 340px;
+}
