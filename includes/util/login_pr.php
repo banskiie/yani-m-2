@@ -59,7 +59,7 @@ if (isset($_POST['submit'])) {
                         $_SESSION['role'] = "admin";
                         $sql = "INSERT INTO user_log (admin_id, ulog_act) VALUES ('{$_SESSION['sessionId']}','Logged In')";
                         mysqli_query($conn, $sql);
-                        header("Location: ../../views/admin/admin-home.php?user={$_SESSION['sessionId']}");
+                        header("Location: ../../views/admin/admin-inquiries.php?user={$_SESSION['sessionId']}");
                         exit();
                         //how
                     } else {

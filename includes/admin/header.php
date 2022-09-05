@@ -22,8 +22,6 @@
 
       <nav class="menu">
         <hr />
-        <a href="admin-home.php" class="menu-item is-active">Dashboard</a>
-        <hr />
         <a href="admin-inquiries.php" class="menu-item">Inquiries</a>
         <hr>
         <a href="admin-bookings.php" class="menu-item">Bookings</a>

@@ -17,24 +17,35 @@ if (isset($_SESSION["role"]) != "admin" && $_SESSION['loggedIn'] != true) {
           <th>Email</th>
           <th>Remark</th>
           <th>Status</th>
+          <th></th>
         </tr>
         <?php
         require '../../includes/db/database.php';
         $sql = "SELECT * FROM inquiry";
         $result = $conn->query($sql);
         if ($result->num_rows > 0) {
-          while ($row = $result->fetch_assoc()) {
-            echo "<tr><td>" . $row["inq_name"] . "</td><td>" . $row["inq_contno"] . "</td><td>"
-              . $row["inq_email"] . "</td><td>" . $row["inq_remark"] . "</td><td> <button name='status_btn' class='status_btn'>Read</button> </td></tr>" ;
-          }
-          echo "</table>";
-        } else {
-          echo "0 results";
-        }
-        $conn->close();
-        ?>
-      </table>
+          while ($row = $result->fetch_assoc()) { ?>
+            <tr>
+              <td><?php echo $row['inq_name']; ?></td>
+              <td><?php echo $row['inq_contno']; ?></td>
+              <td><?php echo $row['inq_email']; ?></td>
+              <td><?php echo $row['inq_remark']; ?></td>
 
+              <td><?php if ($row['inq_status'] == 1) {
+                    echo "Unread";
+                  } else {
+                    echo "Seen";
+                  } ?>
+              </td>
+              <td>
+                <form action="../../includes/util/update_inq.php?update=<?php echo $row['inq_id']; ?>" method="post">
+                  <button name="submit">x</button>
+                </form>
+              </td>
+            </tr>
+        <?php };
+        } ?>
+      </table>
     </div>
   </div>
 </main>
